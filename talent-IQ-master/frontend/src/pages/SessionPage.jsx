@@ -31,12 +31,12 @@ function SessionPage() {
   const isHost = session?.host?.clerkId === user?.id;
   const isParticipant = session?.participant?.clerkId === user?.id;
 
-  const { call, channel, chatClient, isInitializingCall, streamClient } = useStreamClient(
-    session,
-    loadingSession,
-    isHost,
-    isParticipant
-  );
+  // const { call, channel, chatClient, isInitializingCall, streamClient } = useStreamClient(
+  //   session,
+  //   loadingSession,
+  //   isHost,
+  //   isParticipant
+  // );
 
   // find the problem data based on session problem title
   const problemData = session?.problem
